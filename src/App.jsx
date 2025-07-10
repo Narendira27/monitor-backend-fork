@@ -13,7 +13,7 @@ dayjs.extend(relativeTime);
 const isHealthy = (dateStr) => {
   const now = dayjs();
   const timestamp = dayjs(dateStr);
-  return now.diff(timestamp, "second") <= 25;
+  return now.diff(timestamp, "second") <= 40;
 };
 
 const StatusCard = ({ type, date }) => {
